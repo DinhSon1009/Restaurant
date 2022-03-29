@@ -7,7 +7,10 @@ const CartContainer = styled.div`
   padding: 4rem 6rem;
   position: relative;
   ${media.tablet} {
-    padding: 4rem 0 4rem 4rem;
+    padding: 4rem;
+  }
+  ${media.mobile}{
+    padding:2rem;
   }
 `;
 

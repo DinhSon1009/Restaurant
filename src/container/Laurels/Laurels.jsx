@@ -22,6 +22,9 @@ const SubContainer = styled.div`
     flex-direction: column;
     padding: 4rem 0 4rem 4rem;
   }
+  ${media.mobile} {
+    padding: 2rem;
+  }
 `;
 
 const Left = styled.div`
@@ -35,6 +38,10 @@ const Right = styled.div`
   flex: 1;
   justify-content: center;
   margin-left: 2rem;
+  ${media.phone} {
+    align-items: center;
+    margin-left: 0;
+  }
 `;
 
 const Awards = styled.div`

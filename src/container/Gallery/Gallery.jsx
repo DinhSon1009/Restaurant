@@ -24,6 +24,9 @@ const Gallery = () => {
       flex-direction: column;
       padding: 4rem 0 4rem 4rem;
     }
+    ${media.mobile} {
+      padding: 2rem;
+    }
   `;
   const Left = styled.div`
     flex: 1;
@@ -33,6 +36,10 @@ const Gallery = () => {
     justify-content: center;
     padding-right: 2rem;
     min-width: 500px;
+    ${media.mobile} {
+      width: 100%;
+      min-width: 0;
+    }
   `;
   const Right = styled.div`
     flex: 1;

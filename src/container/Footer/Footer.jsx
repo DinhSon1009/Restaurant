@@ -13,6 +13,9 @@ const Footer = () => {
     ${media.tablet} {
       padding: 2rem 4rem;
     }
+    ${media.mobile} {
+      padding: 2rem;
+    }
   `;
   const Heading = styled.div`
     margin-bottom: 1rem;
@@ -58,7 +61,7 @@ const Footer = () => {
   `;
   const Input = styled.input`
     flex: 1;
-    width: 620px;
+    max-width: 620px;
     border: 1px solid var(--color-golden);
     border-radius: 5px;
     font-size: 1rem;
@@ -68,7 +71,8 @@ const Footer = () => {
     padding: 0.75rem 1rem;
     background: var(--color-black);
     ${media.tablet} {
-      width: 500px;
+      width: 80%;
+      margin-right: 0;
     }
   `;
   const Bottom = styled.div`

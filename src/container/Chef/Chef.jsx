@@ -20,6 +20,9 @@ const SubContainer = styled.div`
     padding: 4rem 0 4rem 4rem;
 
   }
+  ${media.mobile}{
+    padding:2rem;
+  }
 `;
 
 const Left = styled.div`

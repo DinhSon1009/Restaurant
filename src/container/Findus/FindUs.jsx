@@ -19,6 +19,10 @@ const SubContainer = styled.div`
     padding: 4rem 0 4rem 4rem;
     align-items: flex-start;
   }
+  ${media.mobile}{
+    padding:2rem;
+    align-items: center;
+  }
 `;
 
 const Left = styled.div`
@@ -28,6 +32,11 @@ const Left = styled.div`
   align-items: flex-start;
   justify-content: center;
   margin-right: 2rem;
+  ${media.mobile}{
+    align-items: center;
+    margin-right: 0;
+    text-align: center;
+  }
 `;
 const Right = styled.div`
   flex: 1;

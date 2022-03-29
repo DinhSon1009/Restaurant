@@ -18,6 +18,9 @@ const SubContainer = styled.div`
     flex-direction: column;
     padding: 4rem 2rem;
   }
+  ${media.mobile} {
+    padding: 2rem;
+  }
 `;
 
 const Top = styled.div`
@@ -58,7 +61,7 @@ const Left = styled.div`
 `;
 
 const Middle = styled.div`
-  width: 410px;
+  max-width: 410px;
   margin: 0 2rem;
   flex: 1;
 `;
