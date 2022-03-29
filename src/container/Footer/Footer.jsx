@@ -93,10 +93,12 @@ const Footer = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex: 1;
     ${media.tablet} {
       margin: 1.5rem;
     }
+    
   `;
   const BoxFlexCol = styled.div``;
 

@@ -20,6 +20,9 @@ const Overlay = styled.div`
   img {
     width: 391px;
     height: 415px;
+    ${media.mobile}{
+      max-width: 100%;
+    }
   }
 `;
 
