@@ -10,9 +10,9 @@ const HeaderContainer = styled.div`
   display: flex;
   background-color: var(--color-black);
 
-  ${media.mobile} {
+  ${media.tablet} {
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 4rem 0 4rem 4rem;
   }
 `;
 

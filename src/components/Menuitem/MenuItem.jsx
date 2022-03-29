@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import "./MenuItem.css";
 
 const Wrapper = styled.div`
@@ -48,21 +47,23 @@ const Right = styled.div`
 
 const Price = styled.p``;
 
-const MenuItem = ({ title, content, price }) => (
-  <Wrapper>
-    <Top>
-      <Left>
-        <Title className="p__cormorant">{title}</Title>
-      </Left>
-      <Line></Line>
-      <Right>
-        <Price className="p__cormorant">{price}</Price>
-      </Right>
-    </Top>
-    <Bottom>
-      <Content className="p__opensans">{content}</Content>
-    </Bottom>
-  </Wrapper>
-);
+const MenuItem = ({sp}) => {
+  return (
+    <Wrapper>
+      <Top>
+        <Left>
+          <Title className="p__cormorant">{sp.title}</Title>
+        </Left>
+        <Line></Line>
+        <Right>
+          <Price className="p__cormorant">{sp.price}</Price>
+        </Right>
+      </Top>
+      <Bottom>
+        <Content className="p__opensans">{sp.tags}</Content>
+      </Bottom>
+    </Wrapper>
+  );
+};
 
 export default MenuItem;

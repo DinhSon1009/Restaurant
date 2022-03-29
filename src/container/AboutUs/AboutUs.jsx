@@ -6,6 +6,9 @@ import { images } from "../../constants";
 const CartContainer = styled.div`
   padding: 4rem 6rem;
   position: relative;
+  ${media.tablet} {
+    padding: 4rem 0 4rem 4rem;
+  }
 `;
 
 const Overlay = styled.div`

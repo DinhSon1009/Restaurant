@@ -16,6 +16,9 @@ const Container = styled.div`
   ${media.mobile} {
     padding: 1rem;
   }
+  ${media.tablet} {
+    padding: 0rem 0 0rem 4rem;
+  }
 `;
 
 const Logo = styled.div`
@@ -29,7 +32,7 @@ const Image = styled.img`
   ${media.desktop} {
     width: 210px;
   }
-  ${media.mobile}{
+  ${media.mobile} {
     width: 110px;
   }
 `;
@@ -161,10 +164,10 @@ const Navbar = () => {
         <A href="#login" className="p__opensans">
           Log In / Register
         </A>
-      <Line />
-      <A href="/" className="p__opensans">
-        Book Table
-      </A>
+        <Line />
+        <A href="/" className="p__opensans">
+          Book Table
+        </A>
       </Login>
       <SmallScreen>
         <GiHamburgerMenu

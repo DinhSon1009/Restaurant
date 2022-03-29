@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { MenuItem, SubHeading } from "../../components";
 import { media } from "../../reponsive";
 import { images } from "../../constants";
+import { data } from "../../constants";
 
 const SubContainer = styled.div`
   position: relative;
@@ -98,25 +99,30 @@ const Image = styled.img`
   width: 100%;
 `;
 
+const Heading = styled.div`
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const SpecialMenu = () => (
   <SubContainer>
     <Top>
-      <SubHeading title="Menu That Fits Your Palatte" />
+      <Heading>
+        <p className="p__cormorant">Menu That Fits Your Palatte</p>
+        <img src={images.spoon} alt="spoon" className="spoon__img " />
+      </Heading>
       <Title className="headtext__cormorant">Today's Special</Title>
     </Top>
     <Wrapper>
       <Left>
         <ItemTitle>Wine & Beer</ItemTitle>
         <MenuItems>
-          <MenuItem
-            title="Chapel Hill Shiraz"
-            content="AU | Bottle"
-            price="$56"
-          />
-          <MenuItem title="Catena Malbee" content="AU | Bottle" price="$59" />
-          <MenuItem title="La Vieillw Rose" content="FR | 750 Ml" price="$44" />
-          <MenuItem title="Rhino Pale Ale" content="CA | 750 Ml" price="$31" />
-          <MenuItem title="Irish Guinness" content="IE | 750 Ml" price="$26" />
+          {data.wines.map((sp, index) => (
+            <MenuItem key={index} sp={sp} />
+          ))}
         </MenuItems>
       </Left>
       <Middle>
@@ -125,31 +131,9 @@ const SpecialMenu = () => (
       <Right>
         <ItemTitle>Cocktails</ItemTitle>
         <MenuItems>
-          <MenuItem
-            title="Aperol Sprtiz"
-            content="Aperol | Villa Marchesi Prosecco | Soda | 30 Ml"
-            price="$20"
-          />
-          <MenuItem
-            title="Dark 'N' Stormy"
-            content="Dark Rum | Ginger Beer | Slice Of Lime"
-            price="$16"
-          />
-          <MenuItem
-            title="Daiquiri"
-            content="Rum | Citrus Juice | Sugar"
-            price="$10"
-          />
-          <MenuItem
-            title="Old Fashioned"
-            content="Bourbon | Brown Sugar | Angostura Bitters"
-            price="$31"
-          />
-          <MenuItem
-            title="Negroni"
-            content="Gin | Sweet Vermouth | Campari | Orange Garnish"
-            price="$26"
-          />
+          {data.cocktails.map((sp, index) => (
+            <MenuItem key={index} sp={sp} />
+          ))}
         </MenuItems>
       </Right>
     </Wrapper>
