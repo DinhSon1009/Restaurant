@@ -19,7 +19,7 @@ const SubContainer = styled.div`
     padding: 4rem 2rem;
   }
   ${media.mobile} {
-    padding: 2rem;
+    padding: 1rem;
   }
 `;
 

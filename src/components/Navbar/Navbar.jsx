@@ -19,9 +19,6 @@ const Container = styled.div`
   ${media.tablet} {
     padding: 0rem 0 0rem 4rem;
   }
-  ${media.mobile}{
-    padding:2rem;
-  }
 `;
 
 const Logo = styled.div`

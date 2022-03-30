@@ -14,7 +14,7 @@ const Footer = () => {
       padding: 2rem 4rem;
     }
     ${media.mobile} {
-      padding: 2rem;
+      padding: 1rem;
     }
   `;
   const Heading = styled.div`

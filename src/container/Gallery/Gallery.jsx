@@ -25,7 +25,7 @@ const Gallery = () => {
       padding: 4rem 0 4rem 4rem;
     }
     ${media.mobile} {
-      padding: 2rem;
+      padding: 1rem;
     }
   `;
   const Left = styled.div`

@@ -15,7 +15,7 @@ const HeaderContainer = styled.div`
     padding: 4rem 0 4rem 4rem;
   }
   ${media.mobile}{
-    padding:2rem;
+    padding:1rem;
   }
 `;
 

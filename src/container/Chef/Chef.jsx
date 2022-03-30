@@ -21,7 +21,7 @@ const SubContainer = styled.div`
 
   }
   ${media.mobile}{
-    padding:2rem;
+    padding:1rem;
   }
 `;
 
