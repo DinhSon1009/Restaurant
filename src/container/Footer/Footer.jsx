@@ -64,7 +64,7 @@ const Footer = () => {
   `;
   const Input = styled.input`
     flex: 1;
-    max-width: 620px;
+    min-width: 620px;
     border: 1px solid var(--color-golden);
     border-radius: 5px;
     font-size: 1rem;
@@ -76,6 +76,7 @@ const Footer = () => {
     ${media.tablet} {
       width: 80%;
       margin-right: 0;
+      min-width: 0;
     }
   `;
   const Bottom = styled.div`
