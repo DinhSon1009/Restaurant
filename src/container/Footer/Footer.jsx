@@ -14,7 +14,7 @@ const Footer = () => {
       padding: 2rem 4rem;
     }
     ${media.mobile} {
-      padding: 1rem;
+      padding: 2rem 1rem;
     }
   `;
   const Heading = styled.div`
@@ -35,6 +35,9 @@ const Footer = () => {
     background: var(--color-black);
     ${media.tablet} {
       padding: 0;
+    }
+    ${media.mobile} {
+      border: none;
     }
   `;
   const Title = styled.h1`
@@ -98,7 +101,6 @@ const Footer = () => {
     ${media.tablet} {
       margin: 1.5rem;
     }
-    
   `;
   const BoxFlexCol = styled.div``;
 
@@ -125,7 +127,7 @@ const Footer = () => {
     <SubContainer>
       <Top>
         <Heading>
-          <p className="p__cormorant">Menu That Fits Your Palatte</p>
+          <p className="p__cormorant">Newsletter</p>
           <img src={images.spoon} alt="spoon" className="spoon__img " />
         </Heading>
         <Title className="headtext__cormorant">

@@ -18,8 +18,8 @@ const SubContainer = styled.div`
     flex-direction: column;
     padding: 4rem 2rem;
   }
-  ${media.mobile} {
-    padding: 1rem;
+  ${media.mobile}{
+    padding:2rem 1rem;
   }
 `;
 

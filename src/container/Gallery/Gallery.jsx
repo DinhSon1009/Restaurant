@@ -25,7 +25,7 @@ const Gallery = () => {
       padding: 4rem 0 4rem 4rem;
     }
     ${media.mobile} {
-      padding: 1rem;
+      padding: 2rem 1rem;
     }
   `;
   const Left = styled.div`
@@ -93,6 +93,10 @@ const Gallery = () => {
     min-width: 301px;
     height: 447px;
     margin-right: 2rem;
+    ${media.mobile} {
+      min-width: 240px;
+      height: 320px;
+    }
   `;
   const sharedIconStyle = css`
     background: var(--color-black);

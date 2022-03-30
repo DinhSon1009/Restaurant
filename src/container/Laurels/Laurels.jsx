@@ -22,8 +22,8 @@ const SubContainer = styled.div`
     flex-direction: column;
     padding: 4rem 0 4rem 4rem;
   }
-  ${media.mobile} {
-    padding: 1rem;
+  ${media.mobile}{
+    padding:2rem 1rem;
   }
 `;
 

@@ -20,7 +20,7 @@ const SubContainer = styled.div`
     align-items: flex-start;
   }
   ${media.mobile}{
-    padding:1rem;
+    padding:2rem 1rem;
     align-items: center;
   }
 `;

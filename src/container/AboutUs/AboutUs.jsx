@@ -10,7 +10,7 @@ const CartContainer = styled.div`
     padding: 4rem;
   }
   ${media.mobile}{
-    padding:1rem;
+    padding:2rem 1rem;
   }
 `;
 

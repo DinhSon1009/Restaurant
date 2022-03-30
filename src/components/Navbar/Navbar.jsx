@@ -12,12 +12,12 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-  padding: 1rem 2rem;
-  ${media.mobile} {
-    padding: 1rem;
-  }
+  padding: 1rem 6rem;
   ${media.tablet} {
     padding: 0rem 0 0rem 4rem;
+  }
+  ${media.mobile} {
+    padding: 1rem;
   }
 `;
 

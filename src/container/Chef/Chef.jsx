@@ -21,7 +21,7 @@ const SubContainer = styled.div`
 
   }
   ${media.mobile}{
-    padding:1rem;
+    padding:2rem 1rem;
   }
 `;
 
@@ -51,10 +51,14 @@ const Right = styled.div`
   flex: 1;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+`;
 
 const Quote = styled.div`
   margin-top: 5rem;
+  ${media.mobile}{
+    margin-top: 2rem;
+  }
 `;
 
 const TopContent = styled.div`
